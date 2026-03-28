@@ -443,17 +443,47 @@
      コンセプト
   =============================================== */
 
-  .concept-grid { grid-template-columns: 1fr; gap: 32px; }
-  .concept-quote { font-size: 18px; }
-  .concept-right { gap: 12px; }
+  .concept {
+    padding-bottom: 24px;
+  }
+
+  .concept-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .concept-grid > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .concept-quote {
+    font-size: 18px;
+    margin: 0;
+  }  .concept-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  /* カードを縦積みに変更（flow-card に合わせる） */
+  .concept-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 24px 20px;
+  }
 
 
   /* ==============================================
      選ばれる3つの理由
   =============================================== */
 
-  .why-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
-  .why-card { padding: 28px 20px; }
+     .why-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 12px;
+  }  .why-card { padding: 28px 20px; }
   .why-num { font-size: 36px; margin-bottom: 12px; }
 
 
@@ -521,8 +551,11 @@
      ブログ
   =============================================== */
 
-  .blog-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
-
+  .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
   .blog-section .section-more {
     margin-top: 24px;
   }
