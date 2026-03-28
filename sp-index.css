@@ -452,7 +452,7 @@
      選ばれる3つの理由
   =============================================== */
 
-  .why-grid { grid-template-columns: 1fr; gap: 16px; }
+  .why-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
   .why-card { padding: 28px 20px; }
   .why-num { font-size: 36px; margin-bottom: 12px; }
 
@@ -521,7 +521,7 @@
      ブログ
   =============================================== */
 
-  .blog-grid { grid-template-columns: 1fr; gap: 16px; }
+  .blog-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
 
   .blog-section .section-more {
     margin-top: 24px;
@@ -591,6 +591,31 @@
   }
 
 } /* end @media (max-width: 768px) */
+
+/* ヘッダーロゴ: ボックスなし・背景透過 */
+.header-logo-plain {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  min-width: auto;
+  min-height: auto;
+}
+
+.header-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+/* フッターロゴ */
+.footer-logo-img {
+  height: 56px;
+  width: auto;
+  display: block;
+  margin-bottom: 16px;
+}
 
 /* 料金・フローセクション内の白ボタン: ピンク枠で視認性向上 */
 .basic-price-section .btn-cta-white,
